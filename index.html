@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="slider">
+        <div class="prev"> <i @click="prev_image" class="fas fa-arrow-left fa-2x"></i></div>
+        <div class="image">
+           <img :src="immagini[indiceImmagini]">
+       </div>
+        <div class="next"> <i @click="next_image" class="fas fa-arrow-right fa-2x"></i></div>
+
+
+      </div>
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
